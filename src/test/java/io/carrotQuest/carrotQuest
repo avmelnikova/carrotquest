@@ -1,0 +1,135 @@
+package io.carrotQuest;
+
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+public class FirstTest {
+
+    public ChromeDriver driver;
+
+    @Before
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+        driver = new ChromeDriver();
+        System.out.println("test start");
+    }
+
+    @Test //проверка загрузки страницы +
+    public void FirstTestTitle() {
+        driver.get("https://beta-01.carrotquest.io/panel/login");
+        String title = driver.getTitle();
+        Assert.assertTrue(title.equals("Carrot quest - панель администратора"));
+    }
+
+
+    @Test //оба поля пустые +
+    public void SecondTestNegativeAutorization() {
+        driver.get("https://beta-01.carrotquest.io/panel/login");
+        driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("ng-active"))));
+            }
+
+    @Test //пустой пароль +
+    public void ThirdTestPassNegative() {
+        driver.get("https://beta-01.carrotquest.io/panel/login");
+        driver.findElement(By.name("email")).sendKeys("TEST@mail.ru");
+        driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("ng-active"))));
+    }
+
+    @Test //пустой email +
+    public void FourthTestEmailFail() {
+        driver.get("https://beta-01.carrotquest.io/panel/login");
+        driver.findElement(By.name("password")).sendKeys("12345");
+        driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("ng-active"))));
+    }
+
+    @Test //успешная авторизация +
+    public void FifthTestGoodAutorization() {
+        driver.get("https://beta-01.carrotquest.io/panel/login");
+        driver.findElement(By.name("email")).sendKeys("apn71978@eoopy.com");
+        driver.findElement(By.name("password")).sendKeys("v1Z9uWKCTp");
+        driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+        WebDriverWait wait = new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.urlContains("dashboard"));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("breadcrumb"))));
+    }
+
+    @Test //успешная с пробелом +
+    public void SixthTestGoodAutorizationEmailSpace() {
+        driver.get("https://beta-01.carrotquest.io/panel/login");
+        driver.findElement(By.name("email")).sendKeys("   apn71978@eoopy.com");
+        driver.findElement(By.name("password")).sendKeys("v1Z9uWKCTp");
+        driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+        WebDriverWait wait = new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.urlContains("dashboard"));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("breadcrumb"))));
+    }
+
+    @Test //не успешная авторизация
+    public void SeventhTestEmailFailPassFail() {
+        driver.get("https://beta-01.carrotquest.io/panel/login");
+        driver.findElement(By.name("email")).sendKeys("test@@mail.ru");
+        driver.findElement(By.name("password")).sendKeys("12345");
+        driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("ng-active")));
+    }
+
+    @Test //не успешная авторизация (пароль) +
+    public void EighthTestEmailGoodPassFail() {
+        driver.get("https://beta-01.carrotquest.io/panel/login");
+        driver.findElement(By.name("email")).sendKeys("apn71978@eoopy.com");
+        driver.findElement(By.name("password")).sendKeys("12345");
+        driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("ng-active")));
+    }
+
+    @Test //неправильный email без нажатия кнопки +
+    public void NinethTestEmailNotButton() {
+        driver.get("https://beta-01.carrotquest.io/panel/login");
+        driver.findElement(By.name("email")).sendKeys("apn71978@eoopy.");
+        driver.findElement(By.name("password")).click();
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("ng-active"))));
+    }
+
+    @Test //неправильный email без нажатия кнопки +
+    public void TehthTestEmailNotButton2() {
+        driver.get("https://beta-01.carrotquest.io/panel/login");
+        driver.findElement(By.name("email")).sendKeys("qweqweqweqweqeqweqweqw");
+        driver.findElement(By.name("password")).click();
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("ng-active"))));
+    }
+
+    @Test //неправильный email без нажатия кнопки +
+    public void EleventhTestEmailNotButton3() {
+        driver.get("https://beta-01.carrotquest.io/panel/login");
+        driver.findElement(By.name("email")).sendKeys("apn..71978@eoopy.ru");
+        driver.findElement(By.name("password")).click();
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("ng-active"))));
+    }
+
+
+    @After
+    public void close(){
+        System.out.println("test close");
+        driver.quit();
+    }
+
+
+}
