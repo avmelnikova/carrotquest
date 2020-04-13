@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d3ae75eb-8574-46b7-8c93-ca2853ec5bf7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aOlFYIiKZjf224CuQSnMxfRKuN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test1-master/test1-master" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="JUnit.FirstTest.FifthTestGoodAutorization">
+    <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.carrotQuest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.carrotQuest" />
+      <option name="MAIN_CLASS_NAME" value="io.carrotQuest.FirstTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.FifthTestGoodAutorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.carrotQuest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.carrotQuest" />
+      <option name="MAIN_CLASS_NAME" value="io.carrotQuest.FirstTest" />
+      <option name="METHOD_NAME" value="FifthTestGoodAutorization" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.FirstTestEmailGoodPassFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.carrotQuest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.carrotQuest" />
+      <option name="MAIN_CLASS_NAME" value="io.carrotQuest.FirstTest" />
+      <option name="METHOD_NAME" value="FirstTestEmailGoodPassFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.SixthTestEmailFailPassFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.carrotQuest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.carrotQuest" />
+      <option name="MAIN_CLASS_NAME" value="io.carrotQuest.FirstTest" />
+      <option name="METHOD_NAME" value="SixthTestEmailFailPassFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.SixthTestEmailGoodPassFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.carrotQuest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.carrotQuest" />
+      <option name="MAIN_CLASS_NAME" value="io.carrotQuest.FirstTest" />
+      <option name="METHOD_NAME" value="SixthTestEmailGoodPassFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FirstTest.FifthTestGoodAutorization" />
+        <item itemvalue="JUnit.FirstTest" />
+        <item itemvalue="JUnit.FirstTest.SixthTestEmailFailPassFail" />
+        <item itemvalue="JUnit.FirstTest.SixthTestEmailGoodPassFail" />
+        <item itemvalue="JUnit.FirstTest.FirstTestEmailGoodPassFail" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3ae75eb-8574-46b7-8c93-ca2853ec5bf7" name="Default Changelist" comment="" />
+      <created>1586614418010</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586614418010</updated>
+      <workItem from="1586614426592" duration="40462000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="122" y="0" key="#Project_Structure" timestamp="1586617589220">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="122" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1586617589220" />
+    <state x="422" y="95" key="FileChooserDialogImpl" timestamp="1586681052096">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="422" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586681052096" />
+    <state width="1161" height="169" key="GridCell.Tab.0.bottom" timestamp="1586705493423">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1161" height="169" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586705493423" />
+    <state width="1161" height="169" key="GridCell.Tab.0.center" timestamp="1586705493423">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1161" height="169" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586705493423" />
+    <state width="1161" height="169" key="GridCell.Tab.0.left" timestamp="1586705493423">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1161" height="169" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586705493423" />
+    <state width="1161" height="169" key="GridCell.Tab.0.right" timestamp="1586705493423">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1161" height="169" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586705493423" />
+    <state x="150" y="0" key="SettingsEditor" timestamp="1586631146124">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="150" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1586631146124" />
+    <state x="262" y="153" key="run.anything.popup" timestamp="1586634366810">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="262" y="153" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1586634366810" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/io/carrotQuest/FirstTest.java</url>
+          <line>58</line>
+          <properties class="io.carrotQuest.FirstTest" method="FifthTestGoodAutorization">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
